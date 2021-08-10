@@ -6,8 +6,5 @@ def getHash(password):
     return hashVal.hex()
 
 password = bytes(str(sys.argv[1]),'utf-8')
-try:
-    hash = getHash(password)
-    print(hash)
-except:
-    print("Provide a valid password for hashing")
+hash = getHash(password)
+print(hash)
